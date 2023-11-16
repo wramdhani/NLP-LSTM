@@ -7,4 +7,4 @@ def model():
     return 0
 
 def generate_response():
-    return 0
+    return 0 
