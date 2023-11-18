@@ -8,4 +8,3 @@ def model():
 
 def generate_response():
     return 0 
-,
