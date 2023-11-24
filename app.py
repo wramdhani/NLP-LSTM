@@ -18,3 +18,4 @@ if __name__ == "__main__":
         if msvcrt.kbhit() and msvcrt.getch() == b'\x1b':
             print("Conversation ended")
             break
+        
