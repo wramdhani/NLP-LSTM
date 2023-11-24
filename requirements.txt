@@ -1,8 +1,4 @@
-flask
-nltk
 numpy
-pandas
-scikit-learn
 tensorflow
-Keras
-gunicorn
+nltk
+scikit-learn

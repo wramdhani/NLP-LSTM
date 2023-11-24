@@ -1,23 +1,20 @@
-from flask import render_template, Flask, request
-from process import model, generate_response
+import msvcrt
+import os
+from process import preparation, generate_response
 
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return render_template('website/index.html')
-
-@app.route('/get')
-def get_response():
-    user_input = str(request.args.get('msg'))
+#download nltk
+preparation()
+def get_bot_response():
+    user_input = input("Kamu: ")
     result = generate_response(user_input)
     return result
 
-if __name__ == '__main__':
-    app.run(
-        host="localhost",
-        port=8080,
-        debug=True
-    )
-    
-    
+if __name__ == "__main__":
+    os.system('cls')
+    while True:
+        response = get_bot_response()
+        print(f"Cece: {response}")
+
+        if msvcrt.kbhit() and msvcrt.getch() == b'\x1b':
+            print("Conversation ended")
+            break

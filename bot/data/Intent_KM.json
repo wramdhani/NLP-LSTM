@@ -1,0 +1,117 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "hallo",
+          "hai",
+          "halo",
+          "hei",
+          "hi",
+          "hy",
+          "pagi",
+          "morning",
+          "siang",
+          "afternoon",
+          "sore",
+          "malam",
+          "bro",
+          "sis",
+          "kawan"
+        ],
+        "responses": [
+          "Halo! Saya baik, terima kasih. Bagaimana saya bisa membantu Anda hari ini?",
+          "Selamat pagi! Ada yang bisa saya bantu untuk Anda hari ini?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Dah",
+          "Dadah",
+          "Bye",
+          "Byee",
+          "Good bye",
+          "Selamat tinggal",
+          "Sampai jumpa",
+          "Bai",
+          "See you"
+        ],
+        "responses": [
+          "Bye!",
+          "Dadahh!",
+          "Good bye!",
+          "Dahh, semoga harimu menyenangkan yaa!",
+          "Sampai jumpa lagi!",
+          "See u! Senang bisa membantu"
+        ]
+      },
+      {
+        "tag": "terimakasih",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "Terima kasih",
+          "Makasih",
+          "Terima kasih banyak"
+        ],
+        "responses": [
+          "Dengan senang hati:)"
+        ]
+      },
+      {
+        "tag": "pertanyaan_produk",
+        "patterns": [
+          "Apakah ada produk baru yang telah dirilis?"
+        ],
+        "responses": [
+          "Ya, kami baru saja merilis beberapa produk baru yang menarik. Apakah Anda tertarik pada kategori tertentu?"
+        ]
+      },
+      {
+        "tag": "pemesanan",
+        "patterns": [
+          "Bagaimana cara saya memesan produk melalui situs web Anda?"
+        ],
+        "responses": [
+          "Proses pemesanan sangat mudah. Pilih produk yang Anda inginkan, tambahkan ke keranjang, dan ikuti langkah-langkah checkout. Apakah ada yang bisa saya bantu?"
+        ]
+      },
+      {
+        "tag": "pengguna_baru",
+        "patterns": [
+          "Apa keuntungan menjadi pengguna terdaftar?"
+        ],
+        "responses": [
+          "Pengguna terdaftar dapat menikmati berbagai keuntungan, termasuk akses ke promo eksklusif, pembaruan produk, dan kemudahan dalam melacak pesanan."
+        ]
+      },
+      {
+        "tag": "promosi_diskon",
+        "patterns": [
+          "Bagaimana cara mendapatkan kode diskon?"
+        ],
+        "responses": [
+          "Anda dapat mendapatkan kode diskon melalui buletin kami atau mengikuti kami di media sosial. Kode tersebut seringkali tersedia selama promosi khusus."
+        ]
+      },
+      {
+        "tag": "keamanan",
+        "patterns": [
+          "Bagaimana keamanan akun saya dijamin?"
+        ],
+        "responses": [
+          "Keamanan akun Anda dijamin melalui enkripsi data dan protokol keamanan tinggi. Pastikan untuk menjaga kerahasiaan kata sandi Anda."
+        ]
+      },
+      {
+        "tag": "privasi",
+        "patterns": [
+          "Bagaimana informasi pribadi saya disimpan dan dijaga?"
+        ],
+        "responses": [
+          "Informasi pribadi Anda disimpan dengan aman menggunakan protokol keamanan tinggi dan hanya diakses oleh personel yang berwenang."
+        ]
+      }
+    ]
+}
