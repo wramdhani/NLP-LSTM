@@ -1,0 +1,684 @@
+  {
+    "intents" : [
+      {
+        "tag": "salam",
+        "patterns": [
+          "Hai, apa kabar?",
+          "Selamat pagi!",
+          "hallo",
+          "hai",
+          "halo",
+          "hei",
+          "hi",
+          "hy",
+          "pagi",
+          "morning",
+          "siang",
+          "afternoon",
+          "sore",
+          "malam",
+          "bro",
+          "sis",
+          "kawan"
+        ],
+        "responses": [
+          "Halo! Saya baik, terima kasih. Bagaimana saya bisa membantu Anda hari ini?",
+          "Hai! Selamat datang di situs kami. Ada yang bisa saya bantu?",
+          "Halo! Jangan ragu bertanya jika ada yang ingin Anda ketahui.",
+          "Helo! Kadekbot di sini untuk membantu. Ada pertanyaan atau bantuan yang Anda butuhkan?"
+        ]
+      },
+      {
+        "tag": "identitas_bot",
+        "patterns": [
+          "Apakah kamu manusia atau robot?"
+        ],
+        "responses": [
+          "Saya adalah bot cerdas yang siap membantu Anda. Bagaimana saya bisa mendukung Anda hari ini?"
+        ]
+      },
+      {
+        "tag": "pertanyaan_produk",
+        "patterns": [
+          "Halo, saya memiliki pertanyaan tentang produk Anda."
+        ],
+        "responses": [
+          "Tentu, saya senang membantu! Apa yang ingin Anda ketahui lebih lanjut tentang produk kami?"
+        ]
+      },
+      {
+        "tag": "selamat_tinggal",
+        "patterns": [
+          "Selamat tinggal",
+          "Sampai jumpa",
+          "Goodbye",
+          "Sampai bertemu lagi",
+          "Sampai nanti"
+        ],
+        "responses": [
+          "Selamat tinggal! Jika Anda membutuhkan bantuan lebih lanjut, jangan ragu untuk kembali.",
+          "Sampai jumpa! Jika ada pertanyaan lebih lanjut, silakan hubungi kami.",
+          "Goodbye! Semoga harimu menyenangkan. Jangan sungkan untuk datang kembali.",
+          "Sampai bertemu lagi! Jika Anda membutuhkan informasi tambahan, kami selalu siap membantu.",
+          "Sampai nanti! Terima kasih atas kunjungan Anda. Jangan ragu untuk datang kembali kapan saja."
+        ]
+     },
+     {
+      "tag": "ucapan_terima_kasih",
+      "patterns": [
+        "Terima kasih atas bantuanmu!",
+        "Terima kasih",
+        "Thanks",
+        "Makasih",
+        "Terimakasih banyak",
+        "Thank you"
+      ],
+      "responses": [
+        "Sama-sama! Jika ada pertanyaan lain, jangan ragu untuk bertanya.",
+        "Sama-sama! Jika ada yang perlu ditanyakan lagi, silakan beri tahu.",
+        "Terima kasih atas kunjungan Anda! Jangan ragu untuk kembali jika ada pertanyaan tambahan.",
+        "Senang bisa membantu! Jika Anda membutuhkan bantuan di masa depan, jangan sungkan untuk menghubungi kami.",
+        "Terimakasih banyak! Semoga harimu menyenangkan.",
+        "Thank you! Jangan ragu untuk datang lagi jika ada yang perlu ditanyakan."
+      ]
+      },
+      {
+        "tag": "jam_kerja",
+        "patterns": [
+          "Kapan jam kerja Anda?"
+        ],
+        "responses": [
+          "Kami tersedia 24/7 untuk membantu Anda. Jika Anda memiliki pertanyaan, silakan beri tahu saya."
+        ]
+      },
+      {
+        "tag": "informasi_umum",
+        "patterns": [
+          "Saya baru di sini, apa yang perlu saya ketahui?"
+        ],
+        "responses": [
+          "Selamat datang! Kami menyediakan berbagai produk dan layanan. Jika Anda memiliki pertanyaan spesifik, jangan ragu untuk bertanya."
+        ]
+      },
+      {
+        "tag": "produk_baru",
+        "patterns": [
+          "Apakah ada produk baru yang telah dirilis?"
+        ],
+        "responses": [
+          "Ya, kami selalu memperbarui katalog kami dengan produk baru. Anda dapat melihatnya di bagian 'Produk Baru' di situs web kami."
+        ]
+      },
+      {
+        "tag": "panduan_pengguna",
+        "patterns": [
+          "Apakah ada panduan pengguna untuk produk ini?"
+        ],
+        "responses": [
+          "Ya, setiap produk kami dilengkapi dengan panduan pengguna yang dapat Anda unduh di situs web kami."
+        ]
+      },
+      {
+        "tag": "produk_terlaris",
+        "patterns": [
+          "Produk mana yang paling laris saat ini?"
+        ],
+        "responses": [
+          "Produk kami yang paling laris saat ini adalah [nama produk]. Anda dapat menemukannya di bagian 'Produk Terlaris' di situs web kami."
+        ]
+      },
+      {
+        "tag": "produk_ramah_lingkungan",
+        "patterns": [
+          "Apakah produk-produk Anda ramah lingkungan?"
+        ],
+        "responses": [
+          "Kami berkomitmen untuk menjaga lingkungan. Banyak dari produk kami dibuat dari bahan yang ramah lingkungan."
+        ]
+      },
+      {
+        "tag": "ketersediaan_warna",
+        "patterns": [
+          "Bagaimana cara saya mengetahui ketersediaan warna untuk produk ini?",
+          "Apakah produk Z tersedia dalam beberapa warna?"
+        ],
+        "responses": [
+          "Anda dapat melihat ketersediaan warna untuk setiap produk di halaman detail produk di situs web kami."
+        ]
+      },
+      {
+        "tag": "perawatan_produk",
+        "patterns": [
+          "Bagaimana cara merawat produk ini?"
+        ],
+        "responses": [
+          "Setiap produk kami dilengkapi dengan instruksi perawatan yang dapat Anda temukan di panduan pengguna atau di situs web kami."
+        ]
+      },
+      {
+        "tag": "perbandingan_produk",
+        "patterns": [
+          "Apa perbedaan antara produk A dan produk B?",
+          "Bagaimana cara membandingkan beberapa produk sebelum memutuskan untuk membeli?"
+        ],
+        "responses": [
+          "Anda dapat membandingkan produk di situs web kami dengan memilih 'Bandingkan' di halaman produk."
+        ]
+      },
+      {
+        "tag": "garansi_produk",
+        "patterns": [
+          "Apakah ada garansi untuk produk ini?"
+        ],
+        "responses": [
+          "Ya, kami menawarkan garansi untuk sebagian besar produk kami. Detail garansi dapat ditemukan di halaman detail produk."
+        ]
+      },
+      {
+        "tag": "ulasan_pelanggan",
+        "patterns": [
+          "Bagaimana cara mendapatkan ulasan pelanggan untuk produk ini?"
+        ],
+        "responses": [
+          "Ulasan pelanggan untuk setiap produk dapat ditemukan di bagian bawah halaman detail produk di situs web kami."
+        ]
+      },
+      {
+        "tag": "target_pasar",
+        "patterns": [
+          "Produk ini cocok untuk siapa?"
+        ],
+        "responses": [
+          "Produk ini dirancang untuk berbagai jenis konsumen. Detail target pasar dapat ditemukan di halaman detail produk."
+        ]
+      },
+      {
+        "tag": "panduan_ukuran",
+        "patterns": [
+          "Apakah ada panduan ukuran untuk pakaian Anda?"
+        ],
+        "responses": [
+          "Ya, kami memiliki panduan ukuran untuk semua pakaian kami. Anda dapat menemukannya di halaman detail produk."
+        ]
+      },
+      {
+        "tag": "demo_produk",
+        "patterns": [
+          "Apakah ada video demo untuk produk ini?"
+        ],
+        "responses": [
+          "Ya, kami memiliki video demo untuk banyak produk kami. Anda dapat menemukannya di halaman detail produk."
+        ]
+      },
+      {
+        "tag": "sertifikasi_keamanan",
+        "patterns": [
+          "Apakah produk ini memiliki sertifikasi keamanan?"
+        ],
+        "responses": [
+          "Ya, banyak produk kami memiliki sertifikasi keamanan. Detail sertifikasi dapat ditemukan di halaman detail produk."
+        ]
+      },
+      {
+        "tag": "rekomendasi_produk",
+        "patterns": [
+          "Apakah ada produk sejenis yang dapat Anda rekomendasikan?"
+        ],
+        "responses": [
+          "Tentu, berdasarkan preferensi Anda, kami merekomendasikan [nama produk]. Anda dapat menemukannya di situs web kami."
+        ]
+      },
+      {
+        "tag": "diskon",
+        "patterns": [
+          "Apakah ada diskon untuk pembelian dalam jumlah besar?"
+        ],
+        "responses": [
+          "Ya, kami menawarkan diskon untuk pembelian dalam jumlah besar. Silakan hubungi tim penjualan kami untuk detail lebih lanjut."
+        ]
+      },
+      {
+        "tag": "waktu_pengiriman",
+        "patterns": [
+          "Berapa lama waktu pengiriman normal untuk produk ini?"
+        ],
+        "responses": [
+          "Waktu pengiriman normal untuk produk ini adalah [jumlah hari] hari kerja. Namun, ini dapat bervariasi tergantung pada lokasi Anda."
+        ]
+      },
+      {
+        "tag": "keunggulan_produk",
+        "patterns": [
+          "Apa yang membuat produk ini unggul dibandingkan dengan produk serupa di pasaran?"
+        ],
+        "responses": [
+          "Produk kami menawarkan [fitur unik] yang membuatnya unggul dibandingkan dengan produk serupa di pasaran."
+        ]
+      },      
+      {
+        "tag": "cara_pemesanan",
+        "patterns": [
+          "Bagaimana cara saya memesan produk melalui situs web Anda?"
+        ],
+        "responses": [
+          "Proses pemesanan sangat mudah. Pilih produk yang Anda inginkan, tambahkan ke keranjang, dan ikuti langkah-langkah checkout. Apakah ada yang bisa saya bantu?"
+        ]
+      },
+      {
+        "tag": "proses_pembayaran",
+        "patterns": [
+          "Apa langkah-langkahnya untuk menyelesaikan proses pembayaran?"
+        ],
+        "responses": [
+          "Setelah Anda memilih produk, ikuti langkah-langkah pembayaran saat checkout. Pilih metode pembayaran, masukkan informasi yang diperlukan, dan konfirmasikan pembelian Anda."
+        ]
+      },
+      {
+        "tag": "batasan_pemesanan",
+        "patterns": [
+          "Apakah ada batasan jumlah produk yang dapat saya pesan sekaligus?"
+        ],
+        "responses": [
+          "Tidak ada batasan kuantitas pembelian. Anda dapat memesan sebanyak yang Anda inginkan sesuai dengan ketersediaan stok."
+        ]
+      },
+      {
+        "tag": "ubah_pesanan",
+        "patterns": [
+          "Apakah saya bisa mengubah pesanan setelah proses pembayaran?"
+        ],
+        "responses": [
+          "Sayangnya, setelah proses pembayaran selesai, pesanan tidak dapat diubah. Pastikan untuk memeriksa pesanan dengan cermat sebelum melanjutkan pembayaran."
+        ]
+      },
+      {
+        "tag": "pembatalan_pesanan",
+        "patterns": [
+          "Bagaimana cara membatalkan pesanan?"
+        ],
+        "responses": [
+          "Jika Anda ingin membatalkan pesanan, segera hubungi layanan pelanggan kami melalui email di cancel@contohlayanan.com dengan menyertakan nomor pesanan Anda."
+        ]
+      },
+      {
+        "tag": "keterlambatan_pesanan",
+        "patterns": [
+          "Apa yang harus saya lakukan jika pesanan saya tidak tiba tepat waktu?"
+        ],
+        "responses": [
+          "Jika pesanan Anda terlambat, beri tahu kami melalui formulir kontak di situs web atau hubungi layanan pelanggan di support@contohlayanan.com, dan kami akan membantu Anda melacaknya."
+        ]
+      },
+      {
+        "tag": "status_pesanan",
+        "patterns": [
+          "Bagaimana cara memeriksa status pesanan saya?"
+        ],
+        "responses": [
+          "Untuk memeriksa status pesanan Anda, masukkan nomor pesanan Anda di halaman pelacakan pesanan di situs web kami, atau beri tahu saya nomor pesanan Anda, dan saya akan memberikan informasi terkini."
+        ]
+      },
+      {
+        "tag": "biaya_pengiriman",
+        "patterns": [
+          "Apakah ada biaya tambahan untuk pengiriman?"
+        ],
+        "responses": [
+          "Biaya pengiriman tergantung pada lokasi pengiriman dan metode yang dipilih. Detail biaya pengiriman akan ditampilkan saat proses checkout."
+        ]
+      },
+      {
+        "tag": "ganti_alamat",
+        "patterns": [
+          "Bagaimana cara mengganti alamat pengiriman setelah pesanan dikonfirmasi?"
+        ],
+        "responses": [
+          "Jika Anda perlu mengganti alamat pengiriman, segera hubungi layanan pelanggan kami di support@contohlayanan.com. Kami akan berusaha membantu Anda secepat mungkin."
+        ]
+      },
+      {
+        "tag": "faktur",
+        "patterns": [
+          "Bagaimana cara mendapatkan faktur untuk pesanan saya?"
+        ],
+        "responses": [
+          "Faktur akan dikirimkan ke alamat email yang Anda berikan saat proses pembayaran. Jika Anda memerlukan salinan tambahan, beri tahu saya nomor pesanan Anda, dan saya akan mengirimkannya"
+        ]
+      },
+      {
+        "tag": "kwitansi",
+        "patterns": [
+          "Bagaimana cara mendapatkan kwitansi pembelian?"
+        ],
+        "responses": [
+          "Kwitansi pembelian akan dikirimkan bersamaan dengan konfirmasi pesanan ke alamat email yang Anda berikan selama proses pembayaran."
+        ]
+      },
+      {
+        "tag": "order_confirmation",
+        "patterns": [
+          "Bagaimana cara konfirmasi pemesanan?",
+          "Saya sudah memesan, bagaimana selanjutnya?",
+          "Apa yang harus saya lakukan setelah memesan?"
+        ],
+        "responses": [
+          "Setelah memesan, Anda akan menerima email konfirmasi pesanan.",
+          "Konfirmasi pesanan akan dikirimkan melalui email yang Anda berikan saat pemesanan.",
+          "Pastikan untuk memeriksa email Anda setelah memesan untuk langkah-langkah selanjutnya."
+        ]
+      },
+      {
+        "tag": "diskon_produk",
+        "patterns": [
+          "Apakah ada diskon khusus untuk produk tertentu saat ini?",
+          "Apakah ada diskon untuk produk tertentu pada hari-hari tertentu?",
+          "Bagaimana cara mendapatkan diskon untuk produk yang baru diluncurkan?",
+          "Apakah diskon berlaku untuk semua produk atau ada pengecualian?",
+          "Apakah diskon dapat ditumpuk atau digabung dengan promosi lainnya?",
+          "Apakah ada diskon tambahan untuk pengguna aplikasi seluler?"
+        ],
+        "responses": [
+          "Ya, saat ini beberapa produk memiliki diskon spesial. Cek halaman promosi di situs web kami untuk informasi lebih lanjut.",
+          "Ya, kami seringkali menawarkan diskon khusus untuk produk tertentu pada hari-hari tertentu. Pantau situs web atau buletin kami untuk pembaruan terbaru.",
+          "Diskon untuk produk baru sering diumumkan di halaman promosi atau melalui buletin kami. Pastikan untuk mengikuti pembaruan kami.",
+          "Beberapa produk mungkin dikecualikan dari diskon tertentu. Informasi ini biasanya tersedia di halaman detail produk atau dalam syarat dan ketentuan promosi.",
+          "Kebijakan diskon kami mungkin berbeda-beda tergantung pada promosi. Beberapa diskon mungkin dapat ditumpuk, sementara yang lain tidak. Silakan cek syarat dan ketentuan promosi untuk detailnya.",
+          "Ya, kami seringkali menawarkan diskon khusus untuk pengguna aplikasi seluler kami. Pastikan untuk mengunduh aplikasi kami dan cek bagian 'Promosi' untuk detailnya."
+        ]
+      },
+      {
+        "tag": "kode_diskon",
+        "patterns": [
+          "Bagaimana cara mendapatkan kode diskon?",
+          "Bagaimana cara menggunakan kode diskon saat proses pembayaran?",
+          "Bagaimana cara mendapatkan notifikasi tentang diskon eksklusif?"
+        ],
+        "responses": [
+          "Anda dapat mendapatkan kode diskon melalui buletin kami atau mengikuti kami di media sosial. Kode tersebut seringkali tersedia selama promosi khusus.",
+          "Saat checkout, Anda akan melihat kolom untuk memasukkan kode diskon. Masukkan kode tersebut, dan diskon akan diterapkan pada total pembelian.",
+          "Jika Anda berlangganan buletin kami atau mengikuti kami di media sosial, Anda akan mendapatkan notifikasi tentang diskon eksklusif dan penawaran khusus."
+        ]
+      },
+      {
+        "tag": "sale_besar",
+        "patterns": [
+          "Kapan akan ada sale besar-besaran atau hari spesial diskon?"
+        ],
+        "responses": [
+          "Sale besar dan hari diskon spesial biasanya diumumkan di situs web kami dan media sosial. Pastikan untuk mengikuti kami untuk mendapatkan pembaruan terkini."
+        ]
+      },
+      {
+        "tag": "diskon_pelanggan_setia",
+        "patterns": [
+          "Apakah ada potongan harga untuk pelanggan yang kembali?",
+          "Apakah ada program loyalitas yang menawarkan diskon tambahan?",
+          "Apakah ada program referensi teman yang memberikan diskon?",
+          "Bagaimana cara mendapatkan diskon ulang tahun?"
+        ],
+        "responses": [
+          "Ya, kami menyediakan diskon khusus untuk pelanggan setia. Anda dapat memeriksa halaman akun atau buletin kami untuk penawaran tersebut.",
+          "Ya, program loyalitas kami memberikan poin reward yang dapat ditukarkan dengan diskon tambahan. Kunjungi halaman program loyalitas di situs web kami untuk informasi lebih lanjut.",
+          "Ya, kami memiliki program referensi teman yang memberikan diskon kepada Anda dan teman yang Anda referensikan. Lihat halaman referensi teman di situs web kami untuk informasi lebih lanjut.",
+          "Kami memberikan diskon ulang tahun kepada pelanggan yang mendaftarkan tanggal ulang tahun mereka di akun. Pastikan informasi ulang tahun Anda sudah terdaftar."
+        ]
+      },
+      {
+        "tag": "diskon_khusus",
+        "patterns": [
+          "Apakah diskon pelajar atau diskon khusus lainnya tersedia?"
+        ],
+        "responses": [
+          "Ya, kami menyediakan diskon pelajar dan diskon khusus untuk kelompok tertentu. Hubungi kami untuk informasi lebih lanjut atau cek halaman promosi."
+        ]
+      },
+      {
+        "tag": "pengguna_baru",
+        "patterns": [
+          "Bagaimana cara membuat akun baru di situs web Anda?",
+          "Apa keuntungan menjadi pengguna terdaftar?",
+          "Apakah saya perlu membuat akun untuk melakukan pembelian?",
+          "Bagaimana cara mengubah informasi akun saya?",
+          "Apa yang harus saya lakukan jika saya lupa kata sandi?",
+          "Bagaimana cara berlangganan buletin atau pembaruan produk?",
+          "Apakah akun saya akan tetap aktif jika saya tidak login untuk jangka waktu tertentu?",
+          "Bagaimana cara mengaktifkan notifikasi email?",
+          "Apakah ada program loyalitas untuk pelanggan setia?",
+          "Apa yang harus saya lakukan jika saya tidak menerima email konfirmasi setelah mendaftar?",
+          "Apakah saya dapat menggunakan akun media sosial saya untuk login?",
+          "Apa yang perlu saya lakukan jika saya ingin mengubah alamat email yang terdaftar?",
+          "Apakah ada panduan untuk memulai bagi pengguna baru?",
+          "Apa yang harus saya lakukan jika saya mengalami kesulitan saat membuat akun?",
+          "Bagaimana cara mendapatkan diskon selamat datang untuk pengguna baru?",
+          "Apakah saya bisa menyimpan beberapa alamat pengiriman di akun saya?",
+          "Bagaimana cara menghubungkan akun saya dengan program loyalitas?",
+          "Apakah ada batasan usia untuk mendaftar akun?",
+          "Apakah saya dapat mengganti nama pengguna saya?",
+          "Bagaimana cara mendapatkan informasi tentang penawaran eksklusif untuk pengguna baru?"
+        ],
+        "responses": [
+          "Selamat datang! Untuk membuat akun baru, kunjungi halaman pendaftaran di situs web kami dan ikuti langkah-langkah yang ditampilkan.",
+          "Pengguna terdaftar dapat menikmati berbagai keuntungan, termasuk akses ke promo eksklusif, pembaruan produk, dan kemudahan dalam melacak pesanan.",
+          "Tidak wajib, tetapi membuat akun memudahkan Anda untuk melacak pesanan, mengelola informasi pembayaran, dan mendapatkan penawaran eksklusif.",
+          "Setelah login, Anda dapat mengakses halaman pengaturan akun untuk mengubah informasi pribadi, alamat, atau kata sandi.",
+          "Di halaman login, klik opsi 'Lupa Kata Sandi' dan ikuti petunjuk untuk mereset kata sandi Anda.",
+          "Anda dapat berlangganan buletin kami di situs web kami, biasanya dengan memasukkan alamat email Anda di bagian yang sesuai.",
+          "Ya, akun Anda akan tetap aktif. Namun, pastikan untuk login secara berkala untuk menjaga keamanan akun Anda.",
+          "Anda dapat mengaktifkan notifikasi email di halaman pengaturan akun. Ini memungkinkan Anda menerima pembaruan terkait pesanan dan penawaran khusus.",
+          "Ya, kami memiliki program loyalitas yang memberikan poin reward, diskon eksklusif, dan keuntungan lainnya untuk pelanggan setia.",
+          "Periksa folder spam atau sampah Anda. Jika email konfirmasi tidak ditemukan, hubungi kami melalui formulir kontak atau email di support@contohlayanan.com.",
+          "Saat ini, kami belum menyediakan opsi login melalui media sosial. Anda dapat membuat akun baru atau melanjutkan sebagai tamu.",
+          "Pada halaman pengaturan akun, Anda dapat mengganti alamat email Anda. Pastikan untuk memverifikasi email baru Anda.",
+          "Ya, kami menyediakan panduan pengguna untuk membantu Anda memahami cara berbelanja, melacak pesanan, dan menggunakan fitur situs web kami. Cek di halaman bantuan atau hubungi kami jika Anda memerlukan bantuan tambahan.",
+          "Jika Anda mengalami kesulitan, hubungi tim dukungan kami di support@contohlayanan.com atau gunakan opsi obrolan langsung di situs web.",
+          "Diskon selamat datang biasanya ditawarkan saat pendaftaran. Anda juga dapat memeriksa halaman promosi di situs web kami.",
+          "Ya, di halaman pengaturan akun Anda dapat menyimpan beberapa alamat pengiriman untuk memudahkan proses checkout.",
+          "Saat membuat akun, Anda dapat memilih untuk bergabung dengan program loyalitas kami. Jika belum, kunjungi halaman pengaturan akun untuk mendaftar.",
+          "Ya, untuk mendaftar akun, Anda harus berusia minimal 18 tahun. Ini untuk mematuhi kebijakan privasi dan persyaratan hukum.",
+          "Ya, Anda dapat mengganti nama pengguna di halaman pengaturan akun. Pastikan untuk menyimpan perubahan tersebut."
+        ]
+      },
+      {
+        "tag": "keamanan_akun",
+        "patterns": [
+          "Bagaimana cara menjaga keamanan akun saya?",
+          "Apa langkah-langkah keamanan yang disarankan untuk akun saya?",
+          "Bagaimana saya bisa melindungi kata sandi saya?",
+          "Apakah ada tips keamanan untuk pengguna baru?",
+          "Apa yang harus saya lakukan jika saya menduga akun saya diretas?",
+          "Bagaimana cara mengaktifkan otentikasi dua faktor?",
+          "Apakah ada fitur keamanan tambahan yang dapat saya aktifkan?"
+        ],
+         "responses": [
+          "Untuk menjaga keamanan akun Anda, pastikan untuk menggunakan kata sandi yang kuat dan tidak pernah memberikannya kepada orang lain.",
+          "Langkah-langkah keamanan yang disarankan termasuk memperbarui kata sandi secara berkala dan tidak menggunakan kata sandi yang sama untuk beberapa layanan.",
+          "Anda bisa melindungi kata sandi Anda dengan tidak membagikannya dengan orang lain, menggunakan kombinasi huruf, angka, dan simbol, serta menghindari kata sandi yang mudah ditebak.",
+          "Tips keamanan untuk pengguna baru meliputi membuat kata sandi yang kompleks, mengaktifkan notifikasi keamanan, dan selalu logout setelah selesai menggunakan akun.",
+          "Jika Anda menduga akun Anda diretas, segera ubah kata sandi Anda dan hubungi dukungan kami untuk bantuan lebih lanjut.",
+          "Anda dapat mengaktifkan otentikasi dua faktor untuk lapisan keamanan ekstra. Ini melibatkan penggunaan kode yang dikirimkan ke perangkat seluler Anda sebagai bentuk verifikasi tambahan.",
+          "Ya, kami memiliki fitur keamanan tambahan seperti pemantauan aktivitas login dan notifikasi keamanan. Anda dapat mengaktifkannya di halaman pengaturan akun Anda."
+        ]
+      },
+      {
+        "tag": "keamanan_pembayaran",
+        "patterns": [
+          "Bagaimana keamanan pembayaran dijamin?",
+          "Apakah transaksi pembayaran saya aman?",
+          "Apa yang harus saya perhatikan saat melakukan pembayaran online?",
+          "Apakah informasi kartu kredit saya aman di situs ini?"
+        ],
+        "responses": [
+          "Keamanan pembayaran dijamin melalui enkripsi data. Pastikan untuk hanya menggunakan metode pembayaran yang aman dan terpercaya.",
+          "Transaksi pembayaran Anda aman dengan penggunaan protokol keamanan yang terenkripsi. Kami tidak menyimpan informasi kartu kredit Anda setelah transaksi selesai.",
+          "Saat melakukan pembayaran online, perhatikan URL yang dimulai dengan 'https', pastikan menggunakan sambungan yang aman, dan hindari mengakses situs dari tautan yang mencurigakan.",
+          "Informasi kartu kredit Anda dijamin aman di situs kami. Kami menggunakan metode keamanan terkini untuk melindungi data pembayaran pelanggan."
+        ]
+      },
+      {
+        "tag": "lapor_keamanan",
+        "patterns": [
+          "Bagaimana cara melaporkan masalah keamanan?",
+          "Apa yang harus saya lakukan jika menemukan celah keamanan?",
+          "Apakah ada program penghargaan untuk laporan keamanan?",
+          "Siapa yang harus dihubungi jika saya khawatir tentang keamanan akun saya?"
+        ],
+        "responses": [
+          "Jika Anda menemui masalah keamanan, harap laporkan segera kepada tim dukungan kami melalui email di security@contohlayanan.com.",
+          "Jika Anda menemukan celah keamanan, laporkan detailnya kepada tim kami. Kami menghargai kontribusi Anda dalam meningkatkan keamanan platform kami.",
+          "Kami memiliki program penghargaan keamanan untuk mereka yang melaporkan celah keamanan yang signifikan. Hubungi kami untuk informasi lebih lanjut.",
+          "Jika Anda khawatir tentang keamanan akun Anda, segera hubungi tim dukungan kami di support@contohlayanan.com untuk bantuan lebih lanjut."
+        ]
+      },
+      {
+        "tag": "kebijakan_privasi",
+        "patterns": [
+          "Bagaimana kebijakan privasi Anda?",
+          "Apa yang termasuk dalam kebijakan privasi situs ini?",
+          "Bagaimana data pelanggan dijaga privasinya?",
+          "Apakah informasi pribadi saya aman di sini?"
+        ],
+        "responses": [
+          "Kami memiliki kebijakan privasi yang ketat untuk melindungi data pelanggan. Anda dapat menemukan detailnya di halaman kebijakan privasi kami.",
+          "Kebijakan privasi kami mencakup pengumpulan, penggunaan, dan perlindungan informasi pribadi pelanggan. Pastikan untuk membacanya secara cermat di halaman kebijakan privasi.",
+          "Data pelanggan sangat dijaga privasinya. Kami hanya menggunakan informasi yang diperlukan untuk transaksi dan tidak membagikannya dengan pihak ketiga tanpa izin Anda.",
+          "Informasi pribadi Anda aman di sini. Kami mengimplementasikan langkah-langkah keamanan untuk melindungi data pelanggan dari akses yang tidak sah."
+        ]
+      },
+      {
+        "tag": "data_pribadi",
+        "patterns": [
+          "Apa jenis data pribadi yang Anda kumpulkan?",
+          "Bagaimana cara Anda menggunakan informasi pribadi saya?",
+          "Apakah data pribadi saya dijual kepada pihak ketiga?",
+          "Bagaimana saya bisa mengakses atau menghapus data pribadi saya?"
+        ],
+        "responses": [
+          "Kami hanya mengumpulkan informasi pribadi yang diperlukan untuk transaksi dan pengiriman. Detailnya dapat ditemukan di kebijakan privasi kami.",
+          "Informasi pribadi Anda digunakan untuk pemrosesan pesanan dan komunikasi terkait. Kami tidak menggunakan informasi tersebut untuk tujuan lain tanpa izin Anda.",
+          "Kami tidak menjual data pribadi pelanggan kepada pihak ketiga. Privasi Anda adalah prioritas bagi kami.",
+          "Anda dapat mengakses atau menghapus data pribadi Anda melalui akun Anda di situs kami. Jika perlu bantuan, hubungi tim dukungan kami."
+        ]
+      },
+      {
+        "tag": "keamanan_data",
+        "patterns": [
+          "Bagaimana keamanan data pelanggan dijaga?",
+          "Apakah informasi kartu kredit saya aman di sini?",
+          "Apakah ada enkripsi yang digunakan untuk melindungi data?",
+          "Apa yang harus saya lakukan jika saya khawatir tentang keamanan data saya?"
+        ],
+        "responses": [
+          "Kami menjaga keamanan data pelanggan dengan mengimplementasikan langkah-langkah keamanan seperti enkripsi dan kontrol akses yang ketat.",
+          "Informasi kartu kredit Anda aman di sini. Kami tidak menyimpan informasi kartu kredit setelah transaksi selesai.",
+          "Ya, kami menggunakan enkripsi untuk melindungi data pelanggan selama proses transaksi dan penyimpanan.",
+          "Jika Anda khawatir tentang keamanan data Anda, segera hubungi tim dukungan kami. Kami siap membantu dan menjawab pertanyaan Anda."
+        ]
+      },
+      {
+        "tag": "cookie_privasi",
+        "patterns": [
+          "Bagaimana situs ini menggunakan cookies?",
+          "Apakah saya bisa menonaktifkan cookies?",
+          "Apakah cookies membahayakan privasi saya?",
+          "Apa yang harus saya lakukan jika saya tidak ingin menerima cookies?"
+        ],
+        "responses": [
+          "Kami menggunakan cookies untuk meningkatkan pengalaman pengguna. Detailnya dapat ditemukan di kebijakan privasi kami.",
+          "Anda dapat menonaktifkan cookies melalui pengaturan browser Anda. Namun, perlu diingat bahwa ini dapat mempengaruhi fungsi situs.",
+          "Cookies yang kami gunakan tidak membahayakan privasi Anda"
+        ]
+      },
+     {
+        "tag": "proses_pembelian",
+        "patterns": [
+          "Bagaimana proses pembelian di situs ini?",
+          "Apa langkah-langkah untuk melakukan pembelian?",
+          "Cara memesan produk di sini?",
+          "Saya ingin membeli, bagaimana caranya?"
+        ],
+         "responses": [
+          "Proses pembelian di situs kami sangat mudah. Pilih produk yang Anda inginkan, tambahkan ke keranjang, dan ikuti langkah-langkah checkout.",
+          "Langkah pertama adalah memilih produk yang Anda inginkan. Setelah itu, klik 'Tambah ke Keranjang' dan ikuti langkah-langkah checkout untuk menyelesaikan pembelian Anda.",
+          "Untuk memesan produk, Anda perlu memilih item yang diinginkan, tambahkan ke keranjang belanja, dan lakukan proses pembayaran saat checkout.",
+          "Anda dapat membeli produk dengan memilih item, menambahkannya ke keranjang belanja, dan mengikuti langkah-langkah pembayaran di halaman checkout."
+        ]
+     },
+     {
+        "tag": "metode_pembayaran",
+        "patterns": [
+          "Apa metode pembayaran yang diterima?",
+          "Cara membayar pesanan?",
+          "Metode pembayaran apa yang tersedia?",
+          "Bagaimana saya bisa melakukan pembayaran?"
+        ],
+        "responses": [
+          "Kami menerima berbagai metode pembayaran, termasuk kartu kredit, transfer bank, dan pembayaran melalui aplikasi pembayaran online.",
+          "Anda dapat membayar pesanan Anda melalui kartu kredit, transfer bank, atau menggunakan aplikasi pembayaran online yang tersedia.",
+          "Metode pembayaran yang tersedia meliputi kartu kredit, transfer bank, dan beberapa opsi pembayaran digital. Pilih metode yang paling nyaman untuk Anda.",
+          "Pembayaran dapat dilakukan dengan kartu kredit, transfer bank, atau melalui aplikasi pembayaran yang kami dukung. Pilih opsi yang sesuai saat melakukan checkout."
+        ]
+      
+      },
+      {
+        "tag": "status_pesanan",
+        "patterns": [
+           "Bagaimana cara melacak status pesanan saya?",
+           "Cara cek status pesanan",
+           "Saya ingin tahu di mana pesanan saya sekarang",
+           "Apakah ada cara untuk mengetahui pesanan sedang diproses?"
+        ],
+         "responses": [
+          "Anda dapat melacak status pesanan Anda dengan masuk ke akun Anda dan menavigasi ke halaman status pesanan. Kami juga akan mengirimkan pembaruan melalui email.",
+          "Cara termudah untuk melacak status pesanan adalah dengan masuk ke akun Anda dan periksa halaman status pesanan. Kami juga akan memberi tahu Anda melalui email setiap kali ada pembaruan.",
+          "Untuk mengecek status pesanan, login ke akun Anda dan kunjungi halaman status pesanan. Kami juga akan memberikan pembaruan melalui email.",
+          "Anda bisa mengetahui status pesanan Anda dengan masuk ke akun Anda dan melihat halaman status pesanan. Kami juga akan memberi tahu Anda secara berkala melalui email."
+        ]
+      },
+      {
+         "tag": "pembatalan_pesanan",
+         "patterns": [
+          "Bagaimana cara membatalkan pesanan?",
+          "Saya ingin membatalkan pesanan",
+          "Bisakah saya membatalkan pembelian?",
+          "Prosedur pembatalan pesanan"
+        ],
+         "responses": [
+           "Jika Anda ingin membatalkan pesanan, segera hubungi tim dukungan kami melalui email atau obrolan langsung untuk bantuan lebih lanjut.",
+           "Anda bisa membatalkan pesanan dengan menghubungi tim dukungan kami secepatnya. Pastikan untuk memberikan detail pesanan Anda agar proses pembatalan dapat segera dilakukan.",
+           "Jika Anda ingin membatalkan pembelian, hubungi tim dukungan kami sesegera mungkin. Proses pembatalan akan bergantung pada status pesanan Anda.",
+           "Prosedur pembatalan pesanan dapat dilakukan dengan menghubungi tim dukungan kami melalui email atau obrolan langsung. Pastikan untuk memberikan informasi pesanan dengan jelas."
+        ] 
+      },
+      {
+         "tag": "pengembalian_produk",
+         "patterns": [
+           "Bagaimana cara mengembalikan produk?",
+           "Prosedur pengembalian barang",
+           "Saya ingin mengembalikan produk",
+           "Apa langkah-langkah untuk pengembalian produk?"
+        ],
+         "responses": [
+           "Untuk mengembalikan produk, hubungi tim dukungan kami dan berikan detail pesanan. Kami akan memberi petunjuk lebih lanjut mengenai prosedur pengembalian.",
+           "Langkah pertama untuk pengembalian produk adalah menghubungi tim dukungan kami. Berikan informasi pesanan, dan kami akan membimbing Anda melalui proses pengembalian.",
+           "Jika Anda ingin mengembalikan produk, segera hubungi tim dukungan kami dan berikan informasi lengkap mengenai pesanan Anda. Kami akan membantu Anda dengan prosedur pengembalian.",
+           "Prosedur pengembalian barang dapat dimulai dengan menghubungi tim dukungan kami. Jangan ragu memberikan rincian pesanan untuk proses yang lebih cepat."
+        ]
+      }
+   ]
+  }
+
+
+  
+  
+  
+  
+      
+
+
+
+
+       
+
+
+
+
