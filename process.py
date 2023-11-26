@@ -9,7 +9,7 @@ from keras.models import load_model
 from keras.utils import pad_sequences
 
 global responses, lemmatizer, tokenizer, le, model, input_shape
-input_shape = 9
+input_shape = 14
 confidence_threshold = 0.7  # Set your confidence threshold here
 
 # import dataset answer
