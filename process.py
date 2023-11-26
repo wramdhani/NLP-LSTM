@@ -10,6 +10,7 @@ from keras.utils import pad_sequences
 
 global responses, lemmatizer, tokenizer, le, model, input_shape
 input_shape = 9
+confidence_threshold = 0.7  # Set your confidence threshold here
 
 # import dataset answer
 def load_response():
@@ -22,20 +23,23 @@ def load_response():
 
 # import model dan download nltk file
 def preparation():
-    load_response()
     global lemmatizer, tokenizer, le, model
-    tokenizer = pickle.load(open('bot/model/tokenizer.pkl', 'rb'))
-    le = pickle.load(open('bot/model/labelencoder.pkl', 'rb'))
-    model = load_model('bot/model/chat_model.h5')
-    lemmatizer = WordNetLemmatizer()
+    load_response()
+
     nltk.download('punkt', quiet=True)
     nltk.download('wordnet', quiet=True)
     nltk.download('omw-1.4', quiet=True)
+    tokenizer = pickle.load(open('bot/model/tokenizer.pkl', 'rb'))
+    le = pickle.load(open('bot/model/labelencoder.pkl', 'rb'))
+    lemmatizer = WordNetLemmatizer()
+    
+    model = load_model('bot/model/chat_model.h5')
+    
 
 # hapus tanda baca
 def remove_punctuation(text):
     texts_p = []
-    text = [letters.lower() for letters in text if letters not in string.punctuation]
+    text = [letters.lower() for letters in text if letters not in string.punctuation or letters == '?']
     text = ''.join(text)
     texts_p.append(text)
     return texts_p
@@ -50,6 +54,10 @@ def vectorization(texts_p):
 # klasifikasi pertanyaan user
 def predict(vector):
     output = model.predict(vector)
+    confidence = np.max(output) # Get the confidence score
+    print("Model Confidence: ", confidence) # debugging
+    if confidence < confidence_threshold:
+        return 'unknown'
     output = output.argmax()
     response_tag = le.inverse_transform([output])[0]
     return response_tag
@@ -59,5 +67,7 @@ def generate_response(text):
     texts_p = remove_punctuation(text)
     vector = vectorization(texts_p)
     response_tag = predict(vector)
+    if response_tag == 'unknown':
+        return "Maaf, saya tidak mengerti hal itu. Bisakah Anda memberikan informasi lebih lanjut?"
     answer = random.choice(responses[response_tag])
     return answer
