@@ -19,31 +19,50 @@
         "malam",
         "bro",
         "sis",
-        "kawan"
+        "kawan",
+        "Selamat siang!",
+        "Selamat malam!",
+        "Apa kabar hari ini?",
+        "Halo, apa kabar?"
       ],
       "responses": [
         "Halo! Saya baik, terima kasih. Bagaimana saya bisa membantu Anda hari ini?",
         "Hai! Selamat datang di situs kami. Ada yang bisa saya bantu?",
         "Halo! Jangan ragu bertanya jika ada yang ingin Anda ketahui.",
-        "Helo! Kadekbot di sini untuk membantu. Ada pertanyaan atau bantuan yang Anda butuhkan?"
+        "Helo! Cece di sini untuk membantu. Ada pertanyaan atau bantuan yang Anda butuhkan?",
+        "Halo! Apa yang bisa saya bantu untuk Anda hari ini?",
+        "Hai! Bagaimana hari Anda? Ada yang bisa saya bantu?",
+        "Selamat datang! Apa yang bisa saya bantu hari ini?"
       ]
     },
     {
       "tag": "identitas_bot",
       "patterns": [
-        "Apakah kamu manusia atau robot?"
+        "Apakah kamu manusia atau robot?",
+        "Kamu ini manusia atau bot?",
+        "Kamu ini robot atau manusia?",
+        "Kamu ini bot atau manusia ya?"
       ],
       "responses": [
-        "Saya adalah bot cerdas yang siap membantu Anda. Bagaimana saya bisa mendukung Anda hari ini?"
+        "Saya adalah bot cerdas yang siap membantu Anda. Bagaimana saya bisa mendukung Anda hari ini?",
+        "Saya adalah bot dan saya di sini untuk membantu Anda. Apa yang bisa saya lakukan untuk Anda hari ini?",
+        "Saya adalah bot dan saya siap membantu Anda. Ada yang bisa saya bantu?",
+        "Saya adalah bot dan saya di sini untuk membantu menjawab pertanyaan Anda. Bagaimana saya bisa membantu Anda hari ini?"
       ]
     },
     {
       "tag": "pertanyaan_produk",
       "patterns": [
-        "Halo, saya memiliki pertanyaan tentang produk Anda."
+        "Halo, saya memiliki pertanyaan tentang produk Anda.",
+        "Saya ingin bertanya tentang produk Anda.",
+        "Saya punya pertanyaan tentang produk Anda.",
+        "Bisa tolong jelaskan tentang produk Anda?"
       ],
       "responses": [
-        "Tentu, saya senang membantu! Apa yang ingin Anda ketahui lebih lanjut tentang produk kami?"
+        "Tentu, saya senang membantu! Apa yang ingin Anda ketahui lebih lanjut tentang produk kami?",
+        "Tentu saja, saya siap membantu! Apa pertanyaan Anda tentang produk kami?",
+        "Ya, tentu saja! Saya di sini untuk membantu. Apa yang ingin Anda tahu tentang produk kami?",
+        "Tentu saja! Saya di sini untuk membantu. Apa pertanyaan Anda tentang produk kami?"
       ]
     },
     {
@@ -53,305 +72,493 @@
         "Sampai jumpa",
         "Goodbye",
         "Sampai bertemu lagi",
-        "Sampai nanti"
+        "Sampai nanti",
+        "bye",
+        "Sampai jumpa nanti",
+        "Sampai bertemu nanti",
+        "Selamat tinggal, sampai jumpa lagi"
       ],
       "responses": [
         "Selamat tinggal! Jika Anda membutuhkan bantuan lebih lanjut, jangan ragu untuk kembali.",
         "Sampai jumpa! Jika ada pertanyaan lebih lanjut, silakan hubungi kami.",
         "Goodbye! Semoga harimu menyenangkan. Jangan sungkan untuk datang kembali.",
         "Sampai bertemu lagi! Jika Anda membutuhkan informasi tambahan, kami selalu siap membantu.",
-        "Sampai nanti! Terima kasih atas kunjungan Anda. Jangan ragu untuk datang kembali kapan saja."
+        "Sampai nanti! Terima kasih atas kunjungan Anda. Jangan ragu untuk datang kembali kapan saja.",
+        "Selamat tinggal! Jangan ragu untuk kembali jika Anda memiliki pertanyaan lain."
       ]
-   },
-   {
-    "tag": "ucapan_terima_kasih",
-    "patterns": [
-      "Terima kasih atas bantuanmu!",
-      "Terima kasih",
-      "Thanks",
-      "Makasih",
-      "Terimakasih banyak",
-      "Thank you"
-    ],
-    "responses": [
-      "Sama-sama! Jika ada pertanyaan lain, jangan ragu untuk bertanya.",
-      "Sama-sama! Jika ada yang perlu ditanyakan lagi, silakan beri tahu.",
-      "Terima kasih atas kunjungan Anda! Jangan ragu untuk kembali jika ada pertanyaan tambahan.",
-      "Senang bisa membantu! Jika Anda membutuhkan bantuan di masa depan, jangan sungkan untuk menghubungi kami.",
-      "Terimakasih banyak! Semoga harimu menyenangkan.",
-      "Thank you! Jangan ragu untuk datang lagi jika ada yang perlu ditanyakan."
-    ]
+    },
+    {
+      "tag": "ucapan_terima_kasih",
+      "patterns": [
+        "Terima kasih atas bantuanmu!",
+        "Terima kasih",
+        "Thanks",
+        "Makasih",
+        "Terimakasih banyak",
+        "Thank you",
+        "Terima kasih atas bantuannya!",
+        "Terima kasih atas informasinya!",
+        "Terima kasih banyak atas bantuannya!"
+      ],
+      "responses": [
+        "Sama-sama! Jika ada pertanyaan lain, jangan ragu untuk bertanya.",
+        "Sama-sama! Jika ada yang perlu ditanyakan lagi, silakan beri tahu.",
+        "Terima kasih atas kunjungan Anda! Jangan ragu untuk kembali jika ada pertanyaan tambahan.",
+        "Senang bisa membantu! Jika Anda membutuhkan bantuan di masa depan, jangan sungkan untuk menghubungi kami.",
+        "Terimakasih banyak! Semoga harimu menyenangkan.",
+        "Thank you! Jangan ragu untuk datang lagi jika ada yang perlu ditanyakan.",
+        "Sama-sama! Senang bisa membantu. Jika ada pertanyaan lain, jangan ragu untuk bertanya."
+      ]
     },
     {
       "tag": "jam_kerja",
       "patterns": [
-        "Kapan jam kerja Anda?"
+        "Kapan jam kerja Anda?",
+        "Jam berapa Anda buka?",
+        "Jam berapa Anda tutup?",
+        "Apakah Anda buka 24 jam?",
+        "Apakah Anda buka setiap hari?"
       ],
       "responses": [
-        "Kami tersedia 24/7 untuk membantu Anda. Jika Anda memiliki pertanyaan, silakan beri tahu saya."
+        "Kami tersedia 24/7 untuk membantu Anda. Jika Anda memiliki pertanyaan, silakan beri tahu saya.",
+        "Kami buka setiap saat untuk melayani Anda.",
+        "Kami selalu siap membantu Anda, kapan pun Anda butuhkan.",
+        "Layanan kami tersedia 24 jam sehari, 7 hari seminggu."
       ]
     },
     {
       "tag": "informasi_umum",
       "patterns": [
-        "Saya baru di sini, apa yang perlu saya ketahui?"
+        "Saya baru di sini, apa yang perlu saya ketahui?",
+        "Apa yang perlu saya ketahui sebagai pengguna baru?",
+        "Apa yang perlu saya lakukan setelah mendaftar?",
+        "Apa saja fitur utama situs web Anda?"
       ],
       "responses": [
-        "Selamat datang! Kami menyediakan berbagai produk dan layanan. Jika Anda memiliki pertanyaan spesifik, jangan ragu untuk bertanya."
+        "Selamat datang! Kami menyediakan berbagai produk dan layanan. Jika Anda memiliki pertanyaan spesifik, jangan ragu untuk bertanya.",
+        "Selamat datang! Kami senang Anda bergabung. Anda dapat mulai dengan menjelajahi berbagai produk dan layanan kami.",
+        "Selamat datang di situs kami! Anda dapat mulai dengan melihat katalog produk kami atau membaca FAQ kami untuk informasi lebih lanjut.",
+        "Halo dan selamat datang! Kami menawarkan berbagai produk dan layanan. Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami."
       ]
     },
     {
       "tag": "produk_baru",
       "patterns": [
-        "Apakah ada produk baru yang telah dirilis?"
+        "Apakah ada produk baru yang telah dirilis?",
+        "Apa saja produk baru Anda?",
+        "Bisakah Anda memberi tahu saya tentang produk baru Anda?",
+        "Apa produk terbaru Anda?"
       ],
       "responses": [
-        "Ya, kami selalu memperbarui katalog kami dengan produk baru. Anda dapat melihatnya di bagian 'Produk Baru' di situs web kami."
+        "Ya, kami selalu memperbarui katalog kami dengan produk baru. Anda dapat melihatnya di bagian 'Produk Baru' di situs web kami.",
+        "Kami selalu menambahkan produk baru ke katalog kami. Anda dapat menemukannya di bagian 'Produk Baru' di situs web kami.",
+        "Kami selalu memiliki produk baru yang menarik. Silakan cek bagian 'Produk Baru' di situs web kami untuk melihatnya.",
+        "Kami terus memperbarui katalog kami dengan produk baru. Anda dapat menemukannya di bagian 'Produk Baru' di situs web kami."
       ]
     },
     {
       "tag": "panduan_pengguna",
       "patterns": [
-        "Apakah ada panduan pengguna untuk produk ini?"
+        "Apakah ada panduan pengguna untuk produk ini?",
+        "Di mana saya bisa menemukan panduan pengguna?",
+        "Apakah Anda memiliki panduan pengguna yang bisa saya unduh?",
+        "Bagaimana cara mendapatkan panduan pengguna?"
       ],
       "responses": [
-        "Ya, setiap produk kami dilengkapi dengan panduan pengguna yang dapat Anda unduh di situs web kami."
+        "Ya, setiap produk kami dilengkapi dengan panduan pengguna yang dapat Anda unduh di situs web kami.",
+        "Setiap produk kami memiliki panduan pengguna yang dapat Anda akses dan unduh di situs web kami.",
+        "Panduan pengguna untuk semua produk kami tersedia untuk diunduh di situs web kami.",
+        "Anda dapat menemukan dan mengunduh panduan pengguna untuk setiap produk kami di situs web kami."
       ]
     },
     {
       "tag": "produk_terlaris",
       "patterns": [
-        "Produk mana yang paling laris saat ini?"
+        "Produk mana yang paling laris saat ini?",
+        "Apa produk terlaris Anda?",
+        "Produk apa yang paling populer saat ini?",
+        "Apa produk terpopuler Anda saat ini?"
       ],
       "responses": [
-        "Produk kami yang paling laris saat ini adalah [nama produk]. Anda dapat menemukannya di bagian 'Produk Terlaris' di situs web kami."
+        "Produk kami yang paling laris saat ini adalah [nama produk]. Anda dapat menemukannya di bagian 'Produk Terlaris' di situs web kami.",
+        "Produk kami yang paling populer saat ini adalah [nama produk]. Anda dapat menemukannya di bagian 'Produk Terlaris' di situs web kami.",
+        "Produk kami yang paling banyak dibeli saat ini adalah [nama produk]. Anda dapat menemukannya di bagian 'Produk Terlaris' di situs web kami.",
+        "Produk kami yang paling banyak dicari saat ini adalah [nama produk]. Anda dapat menemukannya di bagian 'Produk Terlaris' di situs web kami."
       ]
     },
     {
       "tag": "produk_ramah_lingkungan",
       "patterns": [
-        "Apakah produk-produk Anda ramah lingkungan?"
+        "Apakah produk-produk Anda ramah lingkungan?",
+        "Apakah Anda menjual produk yang ramah lingkungan?",
+        "Apakah produk Anda dibuat dengan bahan yang ramah lingkungan?",
+        "Apakah Anda memiliki produk yang ramah lingkungan?"
       ],
       "responses": [
-        "Kami berkomitmen untuk menjaga lingkungan. Banyak dari produk kami dibuat dari bahan yang ramah lingkungan."
+        "Kami berkomitmen untuk menjaga lingkungan. Banyak dari produk kami dibuat dari bahan yang ramah lingkungan.",
+        "Ya, kami sangat peduli terhadap lingkungan. Banyak produk kami yang ramah lingkungan.",
+        "Kami selalu berusaha untuk menjaga lingkungan. Oleh karena itu, banyak produk kami yang ramah lingkungan.",
+        "Kami berkomitmen untuk melindungi lingkungan. Oleh karena itu, kami memastikan bahwa banyak produk kami ramah lingkungan."
       ]
     },
     {
       "tag": "ketersediaan_warna",
       "patterns": [
         "Bagaimana cara saya mengetahui ketersediaan warna untuk produk ini?",
-        "Apakah produk Z tersedia dalam beberapa warna?"
+        "Apakah produk Z tersedia dalam beberapa warna?",
+        "Apakah produk ini tersedia dalam warna lain?",
+        "Apakah saya bisa mendapatkan produk ini dalam warna yang berbeda?"
       ],
       "responses": [
-        "Anda dapat melihat ketersediaan warna untuk setiap produk di halaman detail produk di situs web kami."
+        "Anda dapat melihat ketersediaan warna untuk setiap produk di halaman detail produk di situs web kami.",
+        "Informasi tentang ketersediaan warna untuk setiap produk dapat ditemukan di halaman detail produk kami.",
+        "Anda dapat mengetahui warna apa saja yang tersedia untuk produk ini di halaman detail produk di situs web kami.",
+        "Untuk mengetahui warna apa saja yang tersedia untuk produk ini, Anda bisa melihatnya di halaman detail produk di situs web kami."
       ]
     },
     {
       "tag": "perawatan_produk",
       "patterns": [
-        "Bagaimana cara merawat produk ini?"
+        "Bagaimana cara merawat produk ini?",
+        "Apa yang harus saya lakukan untuk merawat produk ini?",
+        "Bagaimana cara menjaga produk ini agar tetap awet?",
+        "Apa yang harus saya lakukan untuk menjaga produk ini?"
       ],
       "responses": [
-        "Setiap produk kami dilengkapi dengan instruksi perawatan yang dapat Anda temukan di panduan pengguna atau di situs web kami."
+        "Setiap produk kami dilengkapi dengan instruksi perawatan yang dapat Anda temukan di panduan pengguna atau di situs web kami.",
+        "Anda dapat menemukan instruksi perawatan untuk setiap produk di panduan pengguna atau di situs web kami.",
+        "Instruksi perawatan untuk setiap produk kami dapat ditemukan di panduan pengguna atau di situs web kami.",
+        "Untuk merawat produk ini, Anda dapat mengikuti instruksi yang ada di panduan pengguna atau di situs web kami."
       ]
     },
     {
       "tag": "perbandingan_produk",
       "patterns": [
         "Apa perbedaan antara produk A dan produk B?",
-        "Bagaimana cara membandingkan beberapa produk sebelum memutuskan untuk membeli?"
+        "Bagaimana cara membandingkan beberapa produk sebelum memutuskan untuk membeli?",
+        "Bagaimana cara membandingkan produk A dan B?",
+        "Apa perbedaan utama antara produk A dan B?"
       ],
       "responses": [
-        "Anda dapat membandingkan produk di situs web kami dengan memilih 'Bandingkan' di halaman produk."
+        "Anda dapat membandingkan produk di situs web kami dengan memilih 'Bandingkan' di halaman produk.",
+        "Anda dapat membandingkan produk dengan memilih opsi 'Bandingkan' di halaman produk di situs web kami.",
+        "Untuk membandingkan produk, Anda dapat memilih 'Bandingkan' di halaman produk di situs web kami.",
+        "Anda dapat membandingkan produk dengan memilih opsi 'Bandingkan' di halaman produk kami."
       ]
     },
     {
       "tag": "garansi_produk",
       "patterns": [
-        "Apakah ada garansi untuk produk ini?"
+        "Apakah ada garansi untuk produk ini?",
+        "Apakah produk ini memiliki garansi?",
+        "Apakah produk ini datang dengan garansi?",
+        "Apakah saya mendapatkan garansi jika membeli produk ini?"
       ],
       "responses": [
-        "Ya, kami menawarkan garansi untuk sebagian besar produk kami. Detail garansi dapat ditemukan di halaman detail produk."
+        "Ya, kami menawarkan garansi untuk sebagian besar produk kami. Detail garansi dapat ditemukan di halaman detail produk.",
+        "Ya, sebagian besar produk kami dilengkapi dengan garansi. Anda dapat menemukan detailnya di halaman detail produk.",
+        "Kami menawarkan garansi untuk sebagian besar produk kami. Anda dapat menemukan informasi lebih lanjut di halaman detail produk.",
+        "Sebagian besar produk kami datang dengan garansi. Detail garansi dapat ditemukan di halaman detail produk."
       ]
     },
     {
       "tag": "ulasan_pelanggan",
       "patterns": [
-        "Bagaimana cara mendapatkan ulasan pelanggan untuk produk ini?"
+        "Bagaimana cara mendapatkan ulasan pelanggan untuk produk ini?",
+        "Di mana saya bisa menemukan ulasan pelanggan tentang produk ini?",
+        "Apakah ada ulasan pelanggan untuk produk ini?",
+        "Apakah Anda memiliki ulasan pelanggan untuk produk ini?"
       ],
       "responses": [
-        "Ulasan pelanggan untuk setiap produk dapat ditemukan di bagian bawah halaman detail produk di situs web kami."
+        "Ulasan pelanggan untuk setiap produk dapat ditemukan di bagian bawah halaman detail produk di situs web kami.",
+        "Anda dapat menemukan ulasan pelanggan untuk setiap produk di bagian bawah halaman detail produk di situs web kami.",
+        "Ulasan pelanggan untuk produk ini dapat ditemukan di bagian bawah halaman detail produk di situs web kami.",
+        "Anda dapat membaca ulasan pelanggan untuk produk ini di bagian bawah halaman detail produk di situs web kami."
       ]
     },
     {
       "tag": "target_pasar",
       "patterns": [
-        "Produk ini cocok untuk siapa?"
+        "Produk ini cocok untuk siapa?",
+        "Siapa target pasar untuk produk ini?",
+        "Untuk siapa produk ini ditujukan?",
+        "Siapa yang seharusnya menggunakan produk ini?"
       ],
       "responses": [
-        "Produk ini dirancang untuk berbagai jenis konsumen. Detail target pasar dapat ditemukan di halaman detail produk."
+        "Produk ini dirancang untuk berbagai jenis konsumen. Detail target pasar dapat ditemukan di halaman detail produk.",
+        "Produk ini dirancang untuk berbagai jenis pengguna. Anda dapat menemukan detail target pasar di halaman detail produk.",
+        "Produk ini cocok untuk berbagai jenis konsumen. Anda dapat menemukan informasi lebih lanjut di halaman detail produk.",
+        "Produk ini dirancang untuk berbagai jenis pengguna. Informasi lebih lanjut dapat ditemukan di halaman detail produk."
       ]
     },
     {
       "tag": "panduan_ukuran",
       "patterns": [
-        "Apakah ada panduan ukuran untuk pakaian Anda?"
+        "Apakah ada panduan ukuran untuk pakaian Anda?",
+        "Di mana saya bisa menemukan panduan ukuran untuk pakaian Anda?",
+        "Apakah Anda memiliki panduan ukuran untuk pakaian Anda?",
+        "Bagaimana cara saya mengetahui ukuran pakaian Anda?"
       ],
       "responses": [
-        "Ya, kami memiliki panduan ukuran untuk semua pakaian kami. Anda dapat menemukannya di halaman detail produk."
+        "Ya, kami memiliki panduan ukuran untuk semua pakaian kami. Anda dapat menemukannya di halaman detail produk.",
+        "Kami menyediakan panduan ukuran untuk semua pakaian kami di halaman detail produk.",
+        "Anda dapat menemukan panduan ukuran untuk semua pakaian kami di halaman detail produk.",
+        "Panduan ukuran untuk semua pakaian kami tersedia di halaman detail produk."
       ]
     },
     {
       "tag": "demo_produk",
       "patterns": [
-        "Apakah ada video demo untuk produk ini?"
+        "Apakah ada video demo untuk produk ini?",
+        "Di mana saya bisa menemukan video demo untuk produk ini?",
+        "Apakah Anda memiliki video demo untuk produk ini?",
+        "Bagaimana cara saya menonton video demo untuk produk ini?"
       ],
       "responses": [
-        "Ya, kami memiliki video demo untuk banyak produk kami. Anda dapat menemukannya di halaman detail produk."
+        "Ya, kami memiliki video demo untuk banyak produk kami. Anda dapat menemukannya di halaman detail produk.",
+        "Kami menyediakan video demo untuk banyak produk kami di halaman detail produk.",
+        "Anda dapat menemukan video demo untuk banyak produk kami di halaman detail produk.",
+        "Video demo untuk banyak produk kami tersedia di halaman detail produk."
       ]
     },
     {
       "tag": "sertifikasi_keamanan",
       "patterns": [
-        "Apakah produk ini memiliki sertifikasi keamanan?"
+        "Apakah produk ini memiliki sertifikasi keamanan?",
+        "Di mana saya bisa menemukan sertifikasi keamanan untuk produk ini?",
+        "Apakah Anda memiliki sertifikasi keamanan untuk produk ini?",
+        "Bagaimana cara saya mengetahui jika produk ini memiliki sertifikasi keamanan?"
       ],
       "responses": [
-        "Ya, banyak produk kami memiliki sertifikasi keamanan. Detail sertifikasi dapat ditemukan di halaman detail produk."
+        "Ya, banyak produk kami memiliki sertifikasi keamanan. Detail sertifikasi dapat ditemukan di halaman detail produk.",
+        "Kami menyediakan detail sertifikasi keamanan untuk banyak produk kami di halaman detail produk.",
+        "Anda dapat menemukan detail sertifikasi keamanan untuk banyak produk kami di halaman detail produk.",
+        "Detail sertifikasi keamanan untuk banyak produk kami tersedia di halaman detail produk."
       ]
     },
     {
       "tag": "rekomendasi_produk",
       "patterns": [
-        "Apakah ada produk sejenis yang dapat Anda rekomendasikan?"
+        "Apakah ada produk sejenis yang dapat Anda rekomendasikan?",
+        "Apa produk sejenis yang Anda rekomendasikan?",
+        "Bisakah Anda merekomendasikan produk sejenis?",
+        "Apa produk lain yang Anda rekomendasikan?"
       ],
       "responses": [
-        "Tentu, berdasarkan preferensi Anda, kami merekomendasikan [nama produk]. Anda dapat menemukannya di situs web kami."
+        "Tentu, berdasarkan preferensi Anda, kami merekomendasikan [nama produk]. Anda dapat menemukannya di situs web kami.",
+        "Berdasarkan apa yang Anda cari, kami merekomendasikan [nama produk]. Anda dapat menemukannya di situs web kami.",
+        "Kami merekomendasikan [nama produk] berdasarkan preferensi Anda. Anda dapat menemukannya di situs web kami.",
+        "Produk [nama produk] mungkin sesuai dengan apa yang Anda cari. Anda dapat menemukannya di situs web kami."
       ]
     },
     {
       "tag": "diskon",
       "patterns": [
-        "Apakah ada diskon untuk pembelian dalam jumlah besar?"
+        "Apakah ada diskon untuk pembelian dalam jumlah besar?",
+        "Apakah Anda menawarkan diskon untuk pembelian dalam jumlah besar?",
+        "Bisakah saya mendapatkan diskon jika membeli dalam jumlah besar?",
+        "Apakah Anda memiliki penawaran khusus untuk pembelian dalam jumlah besar?"
       ],
       "responses": [
-        "Ya, kami menawarkan diskon untuk pembelian dalam jumlah besar. Silakan hubungi tim penjualan kami untuk detail lebih lanjut."
+        "Ya, kami menawarkan diskon untuk pembelian dalam jumlah besar. Silakan hubungi tim penjualan kami untuk detail lebih lanjut.",
+        "Kami memberikan diskon untuk pembelian dalam jumlah besar. Untuk detail lebih lanjut, silakan hubungi tim penjualan kami.",
+        "Anda dapat mendapatkan diskon jika membeli dalam jumlah besar. Silakan hubungi tim penjualan kami untuk informasi lebih lanjut.",
+        "Kami memiliki penawaran khusus untuk pembelian dalam jumlah besar. Silakan hubungi tim penjualan kami untuk detail lebih lanjut."
       ]
     },
     {
       "tag": "waktu_pengiriman",
       "patterns": [
-        "Berapa lama waktu pengiriman normal untuk produk ini?"
+        "Berapa lama waktu pengiriman normal untuk produk ini?",
+        "Kapan saya bisa mengharapkan produk ini tiba?",
+        "Berapa lama biasanya waktu pengiriman untuk produk ini?",
+        "Kapan produk ini akan sampai?"
       ],
       "responses": [
-        "Waktu pengiriman normal untuk produk ini adalah [jumlah hari] hari kerja. Namun, ini dapat bervariasi tergantung pada lokasi Anda."
+        "Waktu pengiriman normal untuk produk ini adalah [jumlah hari] hari kerja. Namun, ini dapat bervariasi tergantung pada lokasi Anda.",
+        "Biasanya, produk ini akan sampai dalam [jumlah hari] hari kerja, tetapi ini bisa berbeda tergantung pada lokasi Anda.",
+        "Produk ini biasanya akan sampai dalam [jumlah hari] hari kerja, tetapi waktu pengiriman bisa berbeda tergantung pada lokasi Anda.",
+        "Anda dapat mengharapkan produk ini tiba dalam [jumlah hari] hari kerja, tetapi ini bisa berbeda tergantung pada lokasi Anda."
       ]
     },
     {
       "tag": "keunggulan_produk",
       "patterns": [
-        "Apa yang membuat produk ini unggul dibandingkan dengan produk serupa di pasaran?"
+        "Apa yang membuat produk ini unggul dibandingkan dengan produk serupa di pasaran?",
+        "Mengapa saya harus memilih produk ini dibandingkan produk lain?",
+        "Apa keunggulan produk ini dibandingkan produk lain?",
+        "Mengapa produk ini lebih baik dibandingkan produk lain?"
       ],
       "responses": [
-        "Produk kami menawarkan [fitur unik] yang membuatnya unggul dibandingkan dengan produk serupa di pasaran."
+        "Produk kami menawarkan [fitur unik] yang membuatnya unggul dibandingkan dengan produk serupa di pasaran.",
+        "Keunggulan produk kami adalah [fitur unik], yang membuatnya berbeda dari produk lain di pasaran.",
+        "Produk kami memiliki [fitur unik] yang tidak dimiliki oleh produk lain, membuatnya unggul di pasaran.",
+        "Apa yang membuat produk kami unggul adalah [fitur unik] yang tidak dimiliki oleh produk lain."
       ]
     },      
     {
       "tag": "cara_pemesanan",
       "patterns": [
-        "Bagaimana cara saya memesan produk melalui situs web Anda?"
+        "Bagaimana cara saya memesan produk melalui situs web Anda?",
+        "Bagaimana proses pemesanan produk di situs web Anda?",
+        "Apa langkah-langkah untuk memesan produk di situs web Anda?",
+        "Bagaimana cara saya membeli produk di situs web Anda?"
       ],
       "responses": [
-        "Proses pemesanan sangat mudah. Pilih produk yang Anda inginkan, tambahkan ke keranjang, dan ikuti langkah-langkah checkout. Apakah ada yang bisa saya bantu?"
+        "Proses pemesanan sangat mudah. Pilih produk yang Anda inginkan, tambahkan ke keranjang, dan ikuti langkah-langkah checkout. Apakah ada yang bisa saya bantu?",
+        "Untuk memesan produk, cukup pilih produk yang Anda inginkan, tambahkan ke keranjang, dan ikuti petunjuk checkout. Jika Anda membutuhkan bantuan lebih lanjut, beri tahu saya.",
+        "Pemesanan produk di situs web kami sangat mudah. Cukup pilih produk yang Anda suka, tambahkan ke keranjang, dan ikuti langkah-langkah checkout. Jika Anda memiliki pertanyaan lain, jangan ragu untuk bertanya.",
+        "Anda dapat memesan produk dengan mudah di situs web kami. Pilih produk yang Anda inginkan, tambahkan ke keranjang, dan ikuti petunjuk checkout. Jika Anda membutuhkan bantuan lebih lanjut, beri tahu saya."
       ]
     },
     {
       "tag": "proses_pembayaran",
       "patterns": [
-        "Apa langkah-langkahnya untuk menyelesaikan proses pembayaran?"
+        "Apa langkah-langkahnya untuk menyelesaikan proses pembayaran?",
+        "Bagaimana cara saya menyelesaikan pembayaran?",
+        "Apa yang harus saya lakukan untuk menyelesaikan pembayaran?",
+        "Bagaimana proses pembayaran di situs web Anda?"
       ],
       "responses": [
-        "Setelah Anda memilih produk, ikuti langkah-langkah pembayaran saat checkout. Pilih metode pembayaran, masukkan informasi yang diperlukan, dan konfirmasikan pembelian Anda."
+        "Setelah Anda memilih produk, ikuti langkah-langkah pembayaran saat checkout. Pilih metode pembayaran, masukkan informasi yang diperlukan, dan konfirmasikan pembelian Anda.",
+        "Untuk menyelesaikan pembayaran, pilih produk yang Anda inginkan, lanjutkan ke checkout, pilih metode pembayaran yang Anda inginkan, masukkan detail pembayaran, dan konfirmasikan pembelian Anda.",
+        "Setelah Anda memilih produk yang Anda inginkan, lanjutkan ke checkout, pilih metode pembayaran, masukkan detail pembayaran, dan konfirmasikan pembelian Anda.",
+        "Proses pembayaran di situs web kami sangat mudah. Setelah Anda memilih produk, lanjutkan ke checkout, pilih metode pembayaran, masukkan detail pembayaran, dan konfirmasikan pembelian Anda."
       ]
     },
     {
       "tag": "batasan_pemesanan",
       "patterns": [
-        "Apakah ada batasan jumlah produk yang dapat saya pesan sekaligus?"
+        "Apakah ada batasan jumlah produk yang dapat saya pesan sekaligus?",
+        "Apakah ada batas maksimum untuk jumlah produk yang dapat saya pesan?",
+        "Berapa banyak produk yang dapat saya pesan sekaligus?",
+        "Apakah ada batas untuk berapa banyak produk yang dapat saya beli sekaligus?"
       ],
       "responses": [
-        "Tidak ada batasan kuantitas pembelian. Anda dapat memesan sebanyak yang Anda inginkan sesuai dengan ketersediaan stok."
+        "Tidak ada batasan kuantitas pembelian. Anda dapat memesan sebanyak yang Anda inginkan sesuai dengan ketersediaan stok.",
+        "Kami tidak memiliki batasan jumlah produk yang dapat Anda pesan. Anda bebas memesan sebanyak yang Anda inginkan, selama stok tersedia.",
+        "Anda dapat memesan sebanyak yang Anda inginkan dari setiap produk, selama stok masih tersedia.",
+        "Kami tidak menetapkan batas untuk jumlah produk yang dapat Anda pesan. Anda dapat memesan sebanyak yang Anda inginkan, selama stok tersedia."
       ]
     },
     {
       "tag": "ubah_pesanan",
       "patterns": [
-        "Apakah saya bisa mengubah pesanan setelah proses pembayaran?"
+        "Apakah saya bisa mengubah pesanan setelah proses pembayaran?",
+        "Bisakah saya mengubah pesanan saya setelah saya membayar?",
+        "Apakah mungkin untuk mengubah pesanan setelah pembayaran?",
+        "Bisakah saya membuat perubahan pada pesanan saya setelah saya membayar?"
       ],
       "responses": [
-        "Sayangnya, setelah proses pembayaran selesai, pesanan tidak dapat diubah. Pastikan untuk memeriksa pesanan dengan cermat sebelum melanjutkan pembayaran."
+        "Sayangnya, setelah proses pembayaran selesai, pesanan tidak dapat diubah. Pastikan untuk memeriksa pesanan dengan cermat sebelum melanjutkan pembayaran.",
+        "Setelah Anda menyelesaikan pembayaran, pesanan Anda tidak dapat diubah. Pastikan untuk memeriksa semua detail dengan cermat sebelum Anda membayar.",
+        "Setelah proses pembayaran selesai, kami tidak dapat melakukan perubahan pada pesanan Anda. Pastikan untuk memeriksa semua detail pesanan Anda sebelum Anda membayar.",
+        "Sayangnya, setelah pembayaran selesai, kami tidak dapat mengubah pesanan Anda. Harap periksa pesanan Anda dengan cermat sebelum Anda membayar."
       ]
     },
     {
       "tag": "pembatalan_pesanan",
       "patterns": [
-        "Bagaimana cara membatalkan pesanan?"
+        "Bagaimana cara membatalkan pesanan?",
+        "Apa yang harus saya lakukan untuk membatalkan pesanan?",
+        "Bagaimana saya bisa membatalkan pesanan saya?",
+        "Apa prosedur untuk membatalkan pesanan?"
       ],
       "responses": [
-        "Jika Anda ingin membatalkan pesanan, segera hubungi layanan pelanggan kami melalui email di cancel@contohlayanan.com dengan menyertakan nomor pesanan Anda."
+        "Jika Anda ingin membatalkan pesanan, segera hubungi layanan pelanggan kami melalui email di cancel@contohlayanan.com dengan menyertakan nomor pesanan Anda.",
+        "Untuk membatalkan pesanan, silakan kirim email ke cancel@contohlayanan.com dengan nomor pesanan Anda dan kami akan membantu Anda dengan proses pembatalan.",
+        "Anda dapat membatalkan pesanan dengan mengirim email ke cancel@contohlayanan.com dan menyertakan nomor pesanan Anda.",
+        "Jika Anda perlu membatalkan pesanan, kirim email ke cancel@contohlayanan.com dengan nomor pesanan Anda dan kami akan membantu Anda."
       ]
     },
     {
       "tag": "keterlambatan_pesanan",
       "patterns": [
-        "Apa yang harus saya lakukan jika pesanan saya tidak tiba tepat waktu?"
+        "Apa yang harus saya lakukan jika pesanan saya tidak tiba tepat waktu?",
+        "Pesanan saya belum tiba, apa yang harus saya lakukan?",
+        "Pesanan saya terlambat, apa yang harus saya lakukan?",
+        "Apa yang harus saya lakukan jika pesanan saya terlambat?"
       ],
       "responses": [
-        "Jika pesanan Anda terlambat, beri tahu kami melalui formulir kontak di situs web atau hubungi layanan pelanggan di support@contohlayanan.com, dan kami akan membantu Anda melacaknya."
+        "Jika pesanan Anda terlambat, beri tahu kami melalui formulir kontak di situs web atau hubungi layanan pelanggan di support@contohlayanan.com, dan kami akan membantu Anda melacaknya.",
+        "Jika pesanan Anda belum tiba, silakan hubungi layanan pelanggan kami di support@contohlayanan.com dan kami akan membantu Anda melacak pesanan Anda.",
+        "Jika pesanan Anda belum tiba tepat waktu, silakan hubungi layanan pelanggan kami di support@contohlayanan.com dan kami akan membantu Anda.",
+        "Jika pesanan Anda terlambat, silakan hubungi kami di support@contohlayanan.com dan kami akan membantu Anda melacak pesanan Anda."
       ]
     },
     {
       "tag": "status_pesanan",
       "patterns": [
-        "Bagaimana cara memeriksa status pesanan saya?"
+        "Bagaimana cara memeriksa status pesanan saya?",
+        "Di mana saya bisa melihat status pesanan saya?",
+        "Bagaimana saya bisa mengetahui status pesanan saya?",
+        "Apa status pesanan saya?"
       ],
       "responses": [
-        "Untuk memeriksa status pesanan Anda, masukkan nomor pesanan Anda di halaman pelacakan pesanan di situs web kami, atau beri tahu saya nomor pesanan Anda, dan saya akan memberikan informasi terkini."
+        "Untuk memeriksa status pesanan Anda, masukkan nomor pesanan Anda di halaman pelacakan pesanan di situs web kami, atau beri tahu saya nomor pesanan Anda, dan saya akan memberikan informasi terkini.",
+        "Anda dapat memeriksa status pesanan Anda dengan memasukkan nomor pesanan Anda di halaman pelacakan pesanan di situs web kami, atau Anda dapat memberi tahu saya nomor pesanan Anda dan saya akan membantu Anda.",
+        "Anda dapat melihat status pesanan Anda dengan memasukkan nomor pesanan Anda di halaman pelacakan pesanan di situs web kami, atau Anda dapat memberi tahu saya nomor pesanan Anda dan saya akan membantu Anda.",
+        "Untuk mengetahui status pesanan Anda, masukkan nomor pesanan Anda di halaman pelacakan pesanan di situs web kami, atau beri tahu saya nomor pesanan Anda dan saya akan memberikan informasi terkini."
       ]
     },
     {
       "tag": "biaya_pengiriman",
       "patterns": [
-        "Apakah ada biaya tambahan untuk pengiriman?"
+        "Apakah ada biaya tambahan untuk pengiriman?",
+        "Berapa biaya pengiriman untuk produk ini?",
+        "Apakah saya harus membayar biaya pengiriman?",
+        "Apakah ada biaya pengiriman untuk produk ini?"
       ],
       "responses": [
-        "Biaya pengiriman tergantung pada lokasi pengiriman dan metode yang dipilih. Detail biaya pengiriman akan ditampilkan saat proses checkout."
+        "Biaya pengiriman tergantung pada lokasi pengiriman dan metode yang dipilih. Detail biaya pengiriman akan ditampilkan saat proses checkout.",
+        "Biaya pengiriman dapat bervariasi tergantung pada lokasi pengiriman dan metode pengiriman yang Anda pilih. Anda akan melihat biaya pengiriman saat checkout.",
+        "Kami mengenakan biaya pengiriman yang bervariasi tergantung pada lokasi dan metode pengiriman. Biaya pengiriman akan ditampilkan saat Anda melakukan checkout.",
+        "Ya, kami mengenakan biaya pengiriman yang akan ditampilkan saat Anda melakukan checkout. Biaya ini dapat bervariasi tergantung pada lokasi pengiriman dan metode yang Anda pilih."
       ]
     },
     {
       "tag": "ganti_alamat",
       "patterns": [
-        "Bagaimana cara mengganti alamat pengiriman setelah pesanan dikonfirmasi?"
+        "Bagaimana cara mengganti alamat pengiriman setelah pesanan dikonfirmasi?",
+        "Bisakah saya mengubah alamat pengiriman setelah pesanan dikonfirmasi?",
+        "Apa yang harus saya lakukan jika saya ingin mengubah alamat pengiriman setelah pesanan dikonfirmasi?",
+        "Bagaimana cara saya mengubah alamat pengiriman setelah pesanan saya dikonfirmasi?"
       ],
       "responses": [
-        "Jika Anda perlu mengganti alamat pengiriman, segera hubungi layanan pelanggan kami di support@contohlayanan.com. Kami akan berusaha membantu Anda secepat mungkin."
+        "Jika Anda perlu mengganti alamat pengiriman, segera hubungi layanan pelanggan kami di support@contohlayanan.com. Kami akan berusaha membantu Anda secepat mungkin.",
+        "Jika Anda ingin mengubah alamat pengiriman, silakan hubungi layanan pelanggan kami di support@contohlayanan.com secepat mungkin dan kami akan melakukan yang terbaik untuk membantu Anda.",
+        "Untuk mengubah alamat pengiriman, Anda perlu menghubungi layanan pelanggan kami di support@contohlayanan.com secepat mungkin setelah pesanan dikonfirmasi.",
+        "Jika Anda perlu mengubah alamat pengiriman setelah pesanan dikonfirmasi, silakan hubungi layanan pelanggan kami di support@contohlayanan.com dan kami akan membantu Anda."
       ]
     },
     {
       "tag": "faktur",
       "patterns": [
-        "Bagaimana cara mendapatkan faktur untuk pesanan saya?"
+        "Bagaimana cara mendapatkan faktur untuk pesanan saya?",
+        "Di mana saya bisa mendapatkan faktur untuk pesanan saya?",
+        "Apakah saya bisa mendapatkan faktur untuk pesanan saya?",
+        "Bagaimana saya bisa mendapatkan faktur untuk pesanan saya?"
       ],
       "responses": [
-        "Faktur akan dikirimkan ke alamat email yang Anda berikan saat proses pembayaran. Jika Anda memerlukan salinan tambahan, beri tahu saya nomor pesanan Anda, dan saya akan mengirimkannya"
+        "Faktur akan dikirimkan ke alamat email yang Anda berikan saat proses pembayaran. Jika Anda memerlukan salinan tambahan, beri tahu saya nomor pesanan Anda, dan saya akan mengirimkannya",
+        "Anda akan menerima faktur di alamat email yang Anda berikan saat checkout. Jika Anda memerlukan salinan tambahan, beri tahu saya nomor pesanan Anda dan saya akan mengirimkannya.",
+        "Faktur untuk pesanan Anda akan dikirim ke alamat email yang Anda berikan saat pembayaran. Jika Anda memerlukan salinan tambahan, beri tahu saya nomor pesanan Anda dan saya akan mengirimkannya.",
+        "Faktur untuk pesanan Anda akan dikirim ke alamat email Anda setelah pembayaran. Jika Anda memerlukan salinan tambahan, beri tahu saya nomor pesanan Anda dan saya akan mengirimkannya."
       ]
     },
     {
       "tag": "kwitansi",
       "patterns": [
-        "Bagaimana cara mendapatkan kwitansi pembelian?"
+        "Bagaimana cara mendapatkan kwitansi pembelian?",
+        "Di mana saya bisa mendapatkan kwitansi pembelian?",
+        "Apakah saya bisa mendapatkan kwitansi pembelian?",
+        "Bagaimana saya bisa mendapatkan kwitansi pembelian?"
       ],
       "responses": [
-        "Kwitansi pembelian akan dikirimkan bersamaan dengan konfirmasi pesanan ke alamat email yang Anda berikan selama proses pembayaran."
+        "Kwitansi pembelian akan dikirimkan bersamaan dengan konfirmasi pesanan ke alamat email yang Anda berikan selama proses pembayaran.",
+        "Anda akan menerima kwitansi pembelian di alamat email yang Anda berikan saat checkout.",
+        "Kwitansi untuk pembelian Anda akan dikirim ke alamat email yang Anda berikan saat pembayaran.",
+        "Kwitansi pembelian Anda akan dikirim ke alamat email Anda setelah pembayaran."
       ]
     },
     {
@@ -402,10 +609,16 @@
     {
       "tag": "sale_besar",
       "patterns": [
-        "Kapan akan ada sale besar-besaran atau hari spesial diskon?"
+        "Kapan akan ada sale besar-besaran atau hari spesial diskon?",
+        "Kapan sale besar atau diskon spesial berikutnya?",
+        "Kapan sale besar berikutnya?",
+        "Kapan diskon spesial berikutnya?"
       ],
       "responses": [
-        "Sale besar dan hari diskon spesial biasanya diumumkan di situs web kami dan media sosial. Pastikan untuk mengikuti kami untuk mendapatkan pembaruan terkini."
+        "Sale besar dan hari diskon spesial biasanya diumumkan di situs web kami dan media sosial. Pastikan untuk mengikuti kami untuk mendapatkan pembaruan terkini.",
+        "Kami biasanya mengumumkan sale besar dan hari diskon spesial di situs web kami dan media sosial. Jangan lupa untuk mengikuti kami agar tidak ketinggalan info terbaru.",
+        "Informasi tentang sale besar dan hari diskon spesial biasanya dapat ditemukan di situs web kami dan media sosial kami. Pastikan untuk mengikuti kami untuk mendapatkan info terbaru.",
+        "Untuk mengetahui kapan sale besar atau hari diskon spesial berikutnya, pastikan untuk mengikuti kami di situs web dan media sosial kami."
       ]
     },
     {
@@ -426,10 +639,16 @@
     {
       "tag": "diskon_khusus",
       "patterns": [
-        "Apakah diskon pelajar atau diskon khusus lainnya tersedia?"
+        "Apakah diskon pelajar atau diskon khusus lainnya tersedia?",
+        "Apakah Anda menawarkan diskon pelajar atau diskon khusus lainnya?",
+        "Apakah ada diskon khusus untuk pelajar?",
+        "Apakah Anda memiliki diskon khusus untuk pelajar atau grup tertentu?"
       ],
       "responses": [
-        "Ya, kami menyediakan diskon pelajar dan diskon khusus untuk kelompok tertentu. Hubungi kami untuk informasi lebih lanjut atau cek halaman promosi."
+        "Ya, kami menyediakan diskon pelajar dan diskon khusus untuk kelompok tertentu. Hubungi kami untuk informasi lebih lanjut atau cek halaman promosi.",
+        "Kami menawarkan diskon pelajar dan diskon khusus untuk beberapa kelompok. Untuk informasi lebih lanjut, silakan hubungi kami atau cek halaman promosi kami.",
+        "Ya, kami memiliki diskon pelajar dan diskon khusus untuk kelompok tertentu. Silakan hubungi kami untuk detail lebih lanjut atau kunjungi halaman promosi kami.",
+        "Kami menawarkan diskon pelajar dan diskon khusus untuk beberapa kelompok. Silakan hubungi kami untuk informasi lebih lanjut atau lihat halaman promosi kami."
       ]
     },
     {

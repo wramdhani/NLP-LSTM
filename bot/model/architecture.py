@@ -9,14 +9,12 @@ from keras.preprocessing.text import Tokenizer
 from keras.models import Model
 from keras.preprocessing.sequence import pad_sequences
 from keras.utils import to_categorical
-from keras.layers import Input, Embedding, LSTM, Flatten, Dense, GlobalAvgPool1D
+from keras.layers import Input, Embedding, LSTM, Flatten, Dense
 from nltk.stem import WordNetLemmatizer
 
-# Package sentence tokenizer
+# Downloading NTLK Packages
 nltk.download('punkt', quiet=True)
-# Package lemmatization
 nltk.download('wordnet', quiet=True)
-# Package multilingual wordnet data
 nltk.download('omw-1.4', quiet=True)
 
 # Load your intents
@@ -46,7 +44,7 @@ for intent in data['intents']:
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
 
-# Konversi data json ke dalam dataframe
+# Json to Dataframe conversion
 df = pd.DataFrame({"patterns":inputs, "tags":tags})
 
 # Removing Punctuations
