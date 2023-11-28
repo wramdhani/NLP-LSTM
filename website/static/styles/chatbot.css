@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#chat-container {
+  padding: 80px;
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.user-message {
+  margin-top: 50px;
+  width: 550px;
+  height: 66px;
+  background-color: #a0a09f;
+  color: #000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bot-message {
+  margin-top: 50px;
+  width: 550px;
+  height: 66px;
+  color: white;
+  margin-left: auto;
+  background-color: #ece36b;
+  color: #000;
+}
+
+.btn-kirim {
+  background-color: #ece36b;
+}
+
+/* Tambahkan warna latar belakang kuning pada col-4 */
+.yellow-bg {
+  width: 200px;
+  height: 900px;
+  border-radius: 20px;
+  border: 0px solid #000;
+  background: #ebe597;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  max-width: 10%;
+  height: normal;
+  margin-left: 2%;
+}
+
+/* .card-profile .profile-image {
+  margin-left: 2px;
+  position: center;
+} */
+
+.card-profile,
+.card-Qna {
+  background: #ece36b;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px; /* Menambahkan margin antara kartu-kartu */
+}
+
+/* Menambahkan padding dan margin untuk kartu-Qna */
+.card-Qna {
+  margin-top: 120px;
+}
+
+.card-chat {
+  background: none;
+  margin: 0;
+  padding: 0;
+}

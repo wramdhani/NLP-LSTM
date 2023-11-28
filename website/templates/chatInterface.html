@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/chatbot.css') }}">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 yellow-bg mt-4">
+                <div class="card-profile text-center mt-4 pt-4">
+                    <img src="{{ url_for('static', filename='images/User-60.jpg') }}" alt="Profile Image" width="10" class="card-img-top profile-image d-inline" alt="Profile Image" width="10" class="card-img-top profile-image d-inline">
+                    <div class="card-body d-inline">
+                        <h5 class="card-title d-inline">Nama akun pengguna</h5>
+                        <!-- Isi dengan informasi profil -->
+                    </div>
+                </div>
+
+                <div class="card-chat">
+                    <div class="card-body">
+                        <p class="mb-3">Hari ini</p>
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas provident minima consectetur et ut nostrum impedit eos, est deserunt?</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="mb-3">Kemarin</p>
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas provident minima consectetur et ut nostrum impedit eos, est deserunt?</h5>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="mb-3">3 hari yang lalu</p>
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas provident minima consectetur et ut nostrum impedit eos, est deserunt?</h5>
+                    </div>
+                </div>
+
+
+                <div class="card-Qna">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pertanyaan Baru</h5>
+                        <!-- Isi dengan form pertanyaan baru -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body" id="chat-container">
+                        <div class="container text-center margin-bottom-end">
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div>
+                    </div>
+                </div>
+                <div class="input-group mt-4" style="width: 100%;">
+                    <input type="text" id="user-input" class="form-control" style="height: 80px; line-height: 80px;" placeholder="Ketikkan pertanyaanmu disini ya..." aria-label="Ketikkan pertanyaanmu disini ya...">
+                    <div class="input-group-append">
+                        <button class="btn btn-kirim" id="send-button" type="button">Kirim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#send-button').click(function() {
+                var userInput = $('#user-input').val();
+                $.ajax({
+                    url: '/get',
+                    data: {msg: userInput},
+                    type: 'GET',
+                    success: function(response) {
+                        // Add the bot response to the chat container
+                        $('#chat-container').append('<p>' + response + '</p>');
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
