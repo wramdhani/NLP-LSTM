@@ -4,3 +4,4 @@ nltk
 scikit-learn
 pandas
 flask
+flask_session
