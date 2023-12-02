@@ -1,7 +1,7 @@
 # Deployment Chatbot LSTM
 
 ## Instalasi
-Melakukan instalasi semua dependensi yang diperlukan untuk menjalankan aplikasi, termasuk semua pustaka yang disebutkan dalam file requirements.txt. Selanjutnya, melakukan instalasi server tempat aplikasi akan di-deploy.
+Melakukan instalasi semua dependensi yang diperlukan untuk menjalankan aplikasi, termasuk semua pustaka yang disebutkan dalam file `requirements.txt`. Selanjutnya, melakukan instalasi server tempat aplikasi akan di-deploy.
 
 ## Konfigurasi
 Mengkonfigurasi server untuk menjalankan aplikasi Flask, termasuk menginstal semua dependensi yang diperlukan, mengatur variabel lingkungan, dan mengkonfigurasi server web. Jika aplikasi menggunakan database, perlu mengatur ini di server.
